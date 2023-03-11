@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+    <header>
+      <div class="not-section">
+        <h1>Notifications</h1>
+        <button style="display: block;" id="not-count">3</button>
+      </div>
+      <button id="maar">Mark all as read</button>
+    </header>
+    <div class="notification not-unread">
+      <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber" />
+      <div class="message">
+        <p>
+          <a href="#" class="text-bold">Mark Webber</a>
+          reacted to your recent post
+          <a href="#" class="text-light">My first tournament today!<button class="dot"></button></a><br>
+        <div class="lighter-text">1m ago</div>
+        </p>
+      </div>
+    </div>
+    <div class="notification not-unread">
+      <img src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray" />
+      <div class="message">
+        <p>
+          <a href="#" class="text-bold">Angela Gray</a>followed you
+          <button class="dot"></button><br>
+        <div class="lighter-text">5m ago</div>
+        </p>
+      </div>
+    </div>
+    <div class="notification not-unread">
+      <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson" />
+      <div class="message">
+        <p>
+          <a href="#" class="text-bold">Jacob Thompson</a>
+          has joined your group
+          <a href="#" class="text-light">Chess Club<button class="dot"></button></a><br>
+        <div class="lighter-text">1 day ago</div>
+        </p>
+      </div>
+    </div>
+    <div class="notification">
+      <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin" />
+      <div class="message">
+        <p>
+          <a href="#" class="text-bold">Rizky Hasanuddin</a>
+          sent you a private message<br>
+        <div class="lighter-text">5 days ago</div>
+        </p>
+        <p id="text-area">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          I'm already having lots of fun and improving my game.
+        </p>
+      </div>
+    </div>
+    <div id="not-with-img" class="notification">
+      <div style="display: flex;">
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith" />
+        <div class="message">
+          <p>
+            <a href="#" class="text-bold">Kimberly Smith</a> commented on your picture<br>
+            <div class="lighter-text">1 week ago</div>
+          </p>
+        </div>
+      </div>
+      <img id="image-chess" src="./assets/images/image-chess.webp" alt="chess-image">
+    </div>
+    <div class="notification">
+      <img src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson" />
+      <div class="message">
+        <p>
+          <a href="#" class="text-bold">Nathan Peterson</a>
+          reacted to your recent post
+          <a href="#" class="text-light">5 end-game strategies to increase your win rate</a>
+        <div class="lighter-text">2 weeks ago</div>
+        </p>
+      </div>
+    </div>
+    <div class="notification">
+      <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim" />
+      <div class="message">
+        <p>
+          <a href="#" class="text-bold">Anna Kim</a>
+          left the group
+          <a href="#" class="text-light">Chess Club</a>
+        <div class="lighter-text">2 weeks ago</div>
+        </p>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="http://twitter.com/luieitalian">Luieitalian</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
